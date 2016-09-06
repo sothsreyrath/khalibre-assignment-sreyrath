@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="application/json; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
@@ -14,10 +13,10 @@
 		 	,"subscriptions_url" : "${tag.owner.subscriptions_url}", "organizations_url" : "${tag.owner.organizations_url}", "repos_url" : "${tag.owner.repos_url}", "events_url" : "${tag.owner.events_url}", "starred_url" : "${tag.owner.starred_url}"
 		 	,"received_events_url" : "${tag.owner.received_events_url}", "type" : "${tag.owner.type}", "site_admin" : ${tag.owner.site_admin}
 		 }
-		 ,"private": ${tag.private_key},"html_url":"${tag.html_url}","description":"${tag.description}"
-		 ,"fork":${tag.fork},"url":"${tag.url}", "forks_url":"${tag.forks_url}", "keys_url":"${tag.keys_url}", "collaborators_url":"${tag.collaborators_url}" 
-		 ,"teams_url":"${tag.teams_url}", "hooks_url": "${tag.hooks_url}", "issue_events_url" : "${tag.issue_events_url}","events_url":"${tag.events_url}","assignees_url":"${tag.assignees_url}"
-		 ,"branches_url":"${tag.branches_url}", "tags_url": "${tag.tags_url}", "blobs_url" : "${tag.blobs_url}","git_tags_url":"${tag.git_tags_url}","git_refs_url":"${tag.git_refs_url}"
+		 ,"private": ${tag.private_key},"html_url":"${tag.html_url}","description":"","fork":${tag.fork},"url":"${tag.url}"
+		 ,"forks_url":"${tag.forks_url}", "keys_url":"${tag.keys_url}", "collaborators_url":"${tag.collaborators_url}","teams_url":"${tag.teams_url}", "hooks_url": "${tag.hooks_url}" 
+		 ,"issue_events_url" : "${tag.issue_events_url}","events_url":"${tag.events_url}","assignees_url":"${tag.assignees_url}","branches_url":"${tag.branches_url}", "tags_url": "${tag.tags_url}"
+		 ,"blobs_url" : "${tag.blobs_url}","git_tags_url":"${tag.git_tags_url}","git_refs_url":"${tag.git_refs_url}"
 		 ,"trees_url":"${tag.trees_url}", "statuses_url": "${tag.statuses_url}", "languages_url" : "${tag.languages_url}","stargazers_url":"${tag.stargazers_url}","contributors_url":"${tag.contributors_url}"
 		 ,"subscribers_url":"${tag.subscribers_url}", "subscription_url": "${tag.subscription_url}", "commits_url" : "${tag.commits_url}","git_commits_url":"${tag.git_commits_url}","comments_url":"${tag.comments_url}"
 		 ,"issue_comment_url":"${tag.issue_comment_url}", "contents_url": "${tag.contents_url}", "compare_url" : "${tag.compare_url}","merges_url":"${tag.merges_url}","archive_url":"${tag.archive_url}"
